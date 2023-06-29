@@ -37,7 +37,7 @@
                         <Insets left="20.0" right="20.0" />
                      </HBox.margin>
                   </Label>
-                  <TextField />
+                  <TextField fx:id="lastName_TextField"/>
                </children>
             </HBox>
             <HBox prefHeight="71.0" prefWidth="615.0">
@@ -47,7 +47,7 @@
                         <Insets left="20.0" right="20.0" />
                      </HBox.margin>
                   </Label>
-                  <TextField />
+                  <TextField fx:id="email_TextField"/>
                </children>
             </HBox>
             <HBox prefHeight="71.0" prefWidth="615.0">
