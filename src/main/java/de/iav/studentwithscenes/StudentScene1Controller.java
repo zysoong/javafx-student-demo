@@ -33,7 +33,7 @@ public class StudentScene1Controller {
 
 
     @FXML
-    protected void onHelloButtonClick() {
+    protected void onHelloButtonClick() throws IOException {
 
         Student studentToAdd = new Student(
                 firstName_TextField.getText(),
@@ -42,8 +42,13 @@ public class StudentScene1Controller {
                 course_TextField.getText()
                 );
 
-        this.createStudent(studentToAdd);
-        System.out.println(this.studentList);
+        //this.createStudent(studentToAdd);
+        //System.out.println(this.studentList);
+
+        FXMLLoader loaderScene3 = new FXMLLoader(getClass().getResource("/de/iav/javafxdemo/student_scene3.fxml"));
+        loaderScene3.load();
+        ((StudentScene3Controller)(loaderScene3.getController())).addStudent(studentToAdd);
+
     }
 
 
@@ -80,15 +85,12 @@ public class StudentScene1Controller {
         Scene scene3 = new Scene(loaderScene3.load());
         Stage stage = (Stage) (((Node) event.getSource()).getScene().getWindow());
 
-        ((StudentScene3Controller)(loaderScene3.getController())).setStudents(this.studentList);
         ((StudentScene3Controller)(loaderScene3.getController())).initialize();
 
         stage.setScene(scene3);
         stage.show();
 
     }
-
-    public void setStudents(List<Student> students) {this.studentList = students; }
 
     public void createStudent(Student studentToAdd){
         this.studentList.add(studentToAdd);

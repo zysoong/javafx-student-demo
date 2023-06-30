@@ -5,11 +5,14 @@ import de.iav.model.Student;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
+import javafx.event.EventType;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
+import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Duration;
@@ -22,16 +25,48 @@ import java.util.List;
 public class StudentScene3Controller {
 
     @FXML
-    private Button switchToSceneOneButton;
+    private Button addStudentButton;
 
     @FXML
-    private Text studentListText;
+    private TextField studentFirstNameTF;
 
-    private List<Student> students = new ArrayList<>();
+    @FXML
+    private TextField studentSurnameTF;
+
+    @FXML
+    private TextField studentEmailTF;
+
+    @FXML
+    private TextField studentCourseTF;
+
+    @FXML
+    private ListView<Student> students;
 
 
     public void initialize(){
-        this.studentListText.setText(this.students.toString());
+        // Fügt ein Event-Handler hinzu, der den Button deaktiviert, wenn das Textfeld leer ist
+        studentFirstNameTF.addEventHandler(EventType.ROOT, event -> {
+            addStudentButton.setDisable(studentFirstNameTF.getText().isEmpty());
+        });
+
+        studentSurnameTF.addEventHandler(EventType.ROOT, event -> {
+            addStudentButton.setDisable(studentSurnameTF.getText().isEmpty());
+        });
+
+        studentEmailTF.addEventHandler(EventType.ROOT, event -> {
+            addStudentButton.setDisable(studentEmailTF.getText().isEmpty());
+        });
+
+        studentCourseTF.addEventHandler(EventType.ROOT, event -> {
+            addStudentButton.setDisable(studentCourseTF.getText().isEmpty());
+        });
+
+        // Fügt ein Event-Handler hinzu, der den Text des ausgewählten Elements in die Textansicht schreibt
+        /*
+        students.getSelectionModel().selectedItemProperty().addListener(
+                //(observableValue, s, t1) -> text.setText(listView.getSelectionModel().getSelectedItem())
+                (observableValue, s, t1) -> {}
+        );*/
     }
 
 
@@ -53,11 +88,25 @@ public class StudentScene3Controller {
 
     }
 
-    public void setStudents(List<Student> students){
+
+    @FXML
+    public void onAddButton(ActionEvent event) throws IOException {
+
+        String fn = studentFirstNameTF.getText();
+        String sn = studentSurnameTF.getText();
+        String em = studentEmailTF.getText();
+        String sc = studentCourseTF.getText();
+        this.students.getItems().add(new Student(fn, sn, em, sc));
+
+    }
+
+    public void setStudents(ListView<Student> students){
         this.students = students;
     }
 
-
+    public void addStudent(Student student){
+        this.students.getItems().add(student);
+    }
 
 
 
