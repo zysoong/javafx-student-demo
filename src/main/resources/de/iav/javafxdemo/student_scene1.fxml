@@ -75,6 +75,9 @@
               <buttons>
                 <Button mnemonicParsing="false" text="To gretting" fx:id="switchToSceneTwoButton" onAction="#onSSButton_switchToScene2"/>
               </buttons>
+               <buttons>
+                  <Button mnemonicParsing="false" text="Show all" fx:id="switchToSceneThreeButton" onAction="#onSSButton_switchToScene3"/>
+               </buttons>
             </ButtonBar>
          </children>
          <padding>

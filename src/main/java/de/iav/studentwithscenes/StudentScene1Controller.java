@@ -16,7 +16,8 @@ import java.util.List;
 
 public class StudentScene1Controller {
 
-    private List<Student> studentList = new ArrayList<>();
+    @FXML
+    private List<Student> studentList = new ArrayList<Student>();
 
     @FXML
     private TextField firstName_TextField;
@@ -30,8 +31,6 @@ public class StudentScene1Controller {
     @FXML
     private TextField email_TextField;
 
-    @FXML
-    private Button switchToSceneTwoButton;
 
     @FXML
     protected void onHelloButtonClick() {
@@ -44,12 +43,14 @@ public class StudentScene1Controller {
                 );
 
         this.createStudent(studentToAdd);
+        System.out.println(this.studentList);
     }
 
 
     @FXML
     protected void onResetButtonClick() {
         this.studentList.clear();
+        System.out.println(this.studentList);
     }
 
     @FXML
@@ -69,6 +70,25 @@ public class StudentScene1Controller {
         stage.show();
 
     }
+
+
+    @FXML
+    public void onSSButton_switchToScene3(ActionEvent event) throws IOException {
+
+        FXMLLoader loaderScene3 = new FXMLLoader(getClass().getResource("/de/iav/javafxdemo/student_scene3.fxml"));
+
+        Scene scene3 = new Scene(loaderScene3.load());
+        Stage stage = (Stage) (((Node) event.getSource()).getScene().getWindow());
+
+        ((StudentScene3Controller)(loaderScene3.getController())).setStudents(this.studentList);
+        ((StudentScene3Controller)(loaderScene3.getController())).initialize();
+
+        stage.setScene(scene3);
+        stage.show();
+
+    }
+
+    public void setStudents(List<Student> students) {this.studentList = students; }
 
     public void createStudent(Student studentToAdd){
         this.studentList.add(studentToAdd);
