@@ -1,4 +1,4 @@
-package de.iav.javafxwithfxml;
+package de.iav.model;
 
 public record Student(
     String firstName,

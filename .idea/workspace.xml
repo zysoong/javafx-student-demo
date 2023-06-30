@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3269cb3e-87cb-47ec-bedb-4e5e8cc29836" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/iav/javafxwithfxml/Student.java" afterDir="false" />
+    <list default="true" id="3269cb3e-87cb-47ec-bedb-4e5e8cc29836" name="Changes" comment="Create method to add students in a container">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/iav/studentwithscenes/CursedApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/iav/studentwithscenes/CursedController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/de/iav/javafxdemo/student_scene1.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/de/iav/javafxdemo/student_scene2.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/iav/javafxwithfxml/HelloApplicationWithFXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/iav/javafxwithfxml/HelloApplicationWithFXML.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/iav/javafxwithfxml/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/iav/javafxwithfxml/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/iav/javafxwithfxml/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/iav/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/de/iav/javafxdemo/studentDB.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/de/iav/javafxdemo/studentDB.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +44,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/ziyangsong/IdeaProjects/javafx-demo/src/main/resources/de/iav/javafxdemo",
+    "last_opened_file_path": "/Users/ziyangsong/IdeaProjects/javafx-demo/src/main/java/de/iav/studentwithscenes",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -47,6 +54,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/de/iav/studentwithscenes" />
       <recent name="$PROJECT_DIR$/src/main/resources/de/iav/javafxdemo" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -61,7 +69,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687939272467</updated>
-      <workItem from="1687939274583" duration="18695000" />
+      <workItem from="1687939274583" duration="24605000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1687967575508</created>
@@ -70,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687967575508</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Create method to add students in a container">
+      <created>1688026715163</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688026715163</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -78,6 +93,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Create method to add students in a container" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create method to add students in a container" />
   </component>
 </project>

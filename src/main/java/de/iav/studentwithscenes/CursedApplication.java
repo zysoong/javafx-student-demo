@@ -1,18 +1,14 @@
-package de.iav.javafxwithfxml;
+package de.iav.studentwithscenes;
 
 import de.iav.javafxdemo.HelloApplication;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Group;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.paint.Color;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloApplicationWithFXML extends Application {
+public class CursedApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
 

@@ -1,4 +1,4 @@
-package de.iav.javafxwithfxml;
+package de.iav.studentwithscenes;
 
 import de.iav.model.Student;
 import javafx.fxml.FXML;
@@ -7,7 +7,7 @@ import javafx.scene.control.TextField;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HelloController {
+public class CursedController {
 
     private List<Student> studentList = new ArrayList<>();
 
@@ -47,5 +47,7 @@ public class HelloController {
     public void createStudent(Student studentToAdd){
         this.studentList.add(studentToAdd);
     }
+
+
 
 }

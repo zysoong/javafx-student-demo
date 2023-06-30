@@ -8,4 +8,6 @@ module de.iav.javafxdemo {
     opens de.iav.javafxwithfxml to javafx.fxml;
     exports de.iav.javafxdemo;
     exports de.iav.javafxwithfxml;
+    exports de.iav.model;
+    opens de.iav.model to javafx.fxml;
 }
