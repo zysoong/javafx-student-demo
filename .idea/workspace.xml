@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3269cb3e-87cb-47ec-bedb-4e5e8cc29836" name="Changes" comment="Update state">
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/iav/studentwithscenes/StudentScene2Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/iav/studentwithscenes/CursedApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/iav/studentwithscenes/CursedApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/iav/studentwithscenes/CursedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/iav/studentwithscenes/StudentScene1Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/de/iav/javafxdemo/student_scene1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/de/iav/javafxdemo/student_scene1.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/de/iav/javafxdemo/student_scene2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/de/iav/javafxdemo/student_scene2.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +50,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources/de/iav/javafxdemo" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="de.iav.studentwithscenes" />
       <recent name="de.iav.javafxwithfxml" />
     </key>
   </component>
@@ -64,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687939272467</updated>
-      <workItem from="1687939274583" duration="25381000" />
+      <workItem from="1687939274583" duration="25571000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1687967575508</created>
@@ -87,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688113775657</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update state">
+      <created>1688114580243</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1688114580243</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
