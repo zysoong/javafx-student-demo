@@ -17,8 +17,8 @@ public class CursedApplication extends Application {
         // We need a Scene, who accepts root node as a parameter of its constructor
          // Root node "Baseplate Lego"
         // The root node will be binded to the main scene
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/de/iav/javafxdemo/studentDB.fxml"));
-        Scene mainScene = new Scene(fxmlLoader.load(), 512, 580);
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/de/iav/javafxdemo/student_scene1.fxml"));
+        Scene mainScene = new Scene(fxmlLoader.load(), 640, 550);
 
         // Now bind the main scene to the stage
         stage.setScene(mainScene);

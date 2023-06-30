@@ -1,13 +1,20 @@
 package de.iav.studentwithscenes;
 
 import de.iav.model.Student;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CursedController {
+public class StudentScene1Controller {
 
     private List<Student> studentList = new ArrayList<>();
 
@@ -24,6 +31,9 @@ public class CursedController {
     private TextField email_TextField;
 
     @FXML
+    private Button switchToSceneTwoButton;
+
+    @FXML
     protected void onHelloButtonClick() {
 
         Student studentToAdd = new Student(
@@ -34,14 +44,30 @@ public class CursedController {
                 );
 
         this.createStudent(studentToAdd);
-        System.out.println(this.studentList);
     }
 
 
     @FXML
     protected void onResetButtonClick() {
         this.studentList.clear();
-        System.out.println(this.studentList);
+    }
+
+    @FXML
+    public void onSSButton_switchToScene2(ActionEvent event) throws IOException {
+
+        // load layout of scene 2
+        FXMLLoader loaderScene2 = new FXMLLoader(getClass().getResource("/de/iav/javafxdemo/student_scene2.fxml"));
+
+        // set scene object which should display the content in scene2
+        Scene scene2 = new Scene(loaderScene2.load());
+
+        // set stage which should be shown (newly) on click
+        Stage stage = (Stage) (((Node) event.getSource()).getScene().getWindow());
+
+        // set scene2 to stage and show it
+        stage.setScene(scene2);
+        stage.show();
+
     }
 
     public void createStudent(Student studentToAdd){

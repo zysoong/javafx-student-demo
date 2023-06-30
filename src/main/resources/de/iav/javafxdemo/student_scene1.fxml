@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<FlowPane prefHeight="539.0" prefWidth="614.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.iav.studentwithscenes.CursedController">
+<FlowPane prefHeight="539.0" prefWidth="614.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.iav.studentwithscenes.StudentScene1Controller">
    <children>
       <VBox prefHeight="539.0" prefWidth="615.0" spacing="20.0">
          <children>
@@ -73,7 +73,7 @@
             </HBox>
             <ButtonBar prefHeight="40.0" prefWidth="200.0">
               <buttons>
-                <Button mnemonicParsing="false" text="To gretting" />
+                <Button mnemonicParsing="false" text="To gretting" fx:id="switchToSceneTwoButton" onAction="#onSSButton_switchToScene2"/>
               </buttons>
             </ButtonBar>
          </children>

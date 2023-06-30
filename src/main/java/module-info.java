@@ -10,4 +10,6 @@ module de.iav.javafxdemo {
     exports de.iav.javafxwithfxml;
     exports de.iav.model;
     opens de.iav.model to javafx.fxml;
+    opens de.iav.studentwithscenes to javafx.fxml;
+    exports de.iav.studentwithscenes;
 }

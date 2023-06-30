@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Text?>
 
 <?import javafx.scene.control.ButtonBar?>
-<FlowPane prefHeight="539.0" prefWidth="614.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.iav.studentwithscenes.CursedController">
+<FlowPane prefHeight="539.0" prefWidth="614.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.iav.studentwithscenes.StudentScene1Controller">
    <children>
       <VBox prefHeight="539.0" prefWidth="615.0" spacing="20.0">
          <children>
