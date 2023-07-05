@@ -1,6 +1,7 @@
 package de.iav.studentwithscenes;
 
 import de.iav.model.Student;
+import de.iav.service.StudentService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -16,7 +17,6 @@ import java.util.List;
 
 public class StudentScene1Controller {
 
-    @FXML
     private List<Student> studentList = new ArrayList<Student>();
 
     @FXML
@@ -42,12 +42,8 @@ public class StudentScene1Controller {
                 course_TextField.getText()
                 );
 
-        //this.createStudent(studentToAdd);
-        //System.out.println(this.studentList);
+        StudentService.getInstance().saveStudent(studentToAdd);
 
-        FXMLLoader loaderScene3 = new FXMLLoader(getClass().getResource("/de/iav/javafxdemo/student_scene3.fxml"));
-        loaderScene3.load();
-        ((StudentScene3Controller)(loaderScene3.getController())).addStudent(studentToAdd);
 
     }
 

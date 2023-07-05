@@ -13,11 +13,6 @@ public class StudentService {
 
     private StudentService() {
         students = new ArrayList<>();
-        students.addAll(Arrays.asList(
-                new Student("Max", "Mustermann", "max@jahoo.de", "Sport"),
-                new Student("Erika", "Mustermann", "erika@gmail.com", "Kunst"),
-                new Student("Willi", "Wichtig", "wiktiigg123@spammail.de", "Cybersecurity")
-        ));
     }
 
     public static synchronized StudentService getInstance() {

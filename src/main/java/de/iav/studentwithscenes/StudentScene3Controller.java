@@ -2,6 +2,7 @@ package de.iav.studentwithscenes;
 
 
 import de.iav.model.Student;
+import de.iav.service.StudentService;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
@@ -61,12 +62,8 @@ public class StudentScene3Controller {
             addStudentButton.setDisable(studentCourseTF.getText().isEmpty());
         });
 
-        // Fügt ein Event-Handler hinzu, der den Text des ausgewählten Elements in die Textansicht schreibt
-        /*
-        students.getSelectionModel().selectedItemProperty().addListener(
-                //(observableValue, s, t1) -> text.setText(listView.getSelectionModel().getSelectedItem())
-                (observableValue, s, t1) -> {}
-        );*/
+        this.students.getItems().addAll(StudentService.getInstance().getAllStudents());
+
     }
 
 
@@ -96,7 +93,9 @@ public class StudentScene3Controller {
         String sn = studentSurnameTF.getText();
         String em = studentEmailTF.getText();
         String sc = studentCourseTF.getText();
-        this.students.getItems().add(new Student(fn, sn, em, sc));
+        StudentService.getInstance().saveStudent(new Student(fn, sn, em, sc));
+        this.students.getItems().clear();
+        this.students.getItems().addAll(StudentService.getInstance().getAllStudents());
 
     }
 
